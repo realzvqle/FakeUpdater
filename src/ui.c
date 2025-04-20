@@ -1,6 +1,6 @@
 #define RAYGUI_IMPLMENTATION
 #include "raylib/raygui.h"
-
+#include <stddef.h>
 
 
 static Font s_Font;
