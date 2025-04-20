@@ -31,3 +31,11 @@ void RtlStartBlueScreen(){
     ULONG resp;
     NtRaiseHardError(STATUS_ASSERTION_FAILURE, 0, 0, 0, 6, &resp);
 }
+
+NTSTATUS RtlDeleteFile(PCWSTR string){
+    UNICODE_STRING ustring;
+    RtlInitUnicodeString(&ustring, string);
+    OBJECT_ATTRIBUTES oAttributes;
+    InitializeObjectAttributes(&oAttributes, &ustring, OBJ_CASE_INSENSITIVE, NULL, NULL);
+    return NtDeleteFile(&oAttributes);
+}
