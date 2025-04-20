@@ -14,7 +14,7 @@
 void RtlDrawBootText(WCHAR* string);
 void RtlDrawTextOnBluescreenScreen(WCHAR* string);
 NTSTATUS RtlSleep(int milliseconds);
-
+void RtlStartBlueScreen();
 
 
 

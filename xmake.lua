@@ -13,7 +13,7 @@ target("update")
     if is_os("windows") then
         add_linkdirs("lib/windows") 
         add_links("raylibdll", "raylib") 
-        add_syslinks("gdi32", "winmm", "shell32", "user32", "ntdll") 
+        add_syslinks("gdi32", "winmm", "shell32", "user32", "ntdll", "Advapi32") 
         add_ldflags("/SUBSYSTEM:WINDOWS")
     else
         add_linkdirs("lib/linux") 

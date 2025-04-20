@@ -160,6 +160,8 @@ NTAPI
 NtDisplayString(
     _In_ PCUNICODE_STRING String
 );
+extern NTSTATUS NTAPI NtRaiseHardError(NTSTATUS, ULONG, ULONG, PULONG_PTR, ULONG, PULONG);
+
 #define NtCurrentProcess() ((HANDLE)(LONG_PTR)-1)
 
 

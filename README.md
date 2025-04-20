@@ -1,16 +1,8 @@
-# Raylib + Xmake template!
+# Fake Windows Updater
 
 
-Works on both Windows and Linux!
+Idk, i was bored making this
 
+if you wanna build this make sure you have xmake, MSVC, and NSIS installed
 
-
-# Compiling
-
-Make sure to have xmake installed
-
-also make sure to have a C Compiler installed (msvc for windows, gcc for linux)
-
-on windows run `run.bat` to run it and to clean run `clean.bat`
-
-on linux run `make` and to clean run  `make clean`
+build the binaries via running `run.bat` in the x64 Native Command Prompt, and then open NSIS and compile the installer.nsi script to get the finished Self-Extracting Executable binary
